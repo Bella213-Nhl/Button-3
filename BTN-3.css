@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-3 {
+    color: #000;
+    background: #fff;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "montserrat";
+    transition: all .25s ease;
+}
+
+.btn-3::after {
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    width: 0%;
+    height: 3px;
+    background: #000;
+    left: 0px;
+    bottom: -10px;
+    transition: all .25s ease;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-3:hover::after {
+    width: 60%;
+}
